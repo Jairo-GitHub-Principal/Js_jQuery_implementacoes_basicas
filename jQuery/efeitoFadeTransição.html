@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>extrutura base jquery</title>
+
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script>
+        $(document) .ready (function() { /*escopoda function*/ 
+           
+            $("#exibir").click(function(){
+                $("h1").fadeIn(5000) // exibi o elemento h1
+            })
+
+            $("#ocultar").click(function(){
+                $("h1").fadeOut("slow"); // oculta o elemento h1
+            })           
+
+            
+            //oculta o elemento dom css 
+            $("#ocultarComcss").click(function(){
+                $("h1").css("display","none") //ocultar o elemento h1
+            })
+        });
+    </script>
+</head>
+    <button id="exibir">exibir</button>
+    <button id="ocultar">ocultar</button>
+    <button id="ocultarComcss">ocultar com css</button> </br>
+    <h1>aprendendo jquery</h1>
+    
+</body>
+</html>

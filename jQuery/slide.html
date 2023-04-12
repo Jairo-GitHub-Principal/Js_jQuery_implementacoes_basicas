@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>extrutura base jquery</title>
+
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script>
+        $(document) .ready (function() { /*escopoda function*/ 
+           
+            $("#exibir").click(function(){
+                $(".message").slideDown(1000) // exibi o elemento h1
+            })
+
+            $("#ocultar").click(function(){
+                $(".message").slideUp(1000); // oculta o elemento h1
+           })   
+           
+           // exibir e ocultar quando clicar na tag de texto h1, 
+           $(".exibir").click(function(){ $(".message").slideDown();});
+           $(".ocultar").click(function(){ $(".message").slideUp();});
+            
+        });
+    </script>
+</head>
+    <button id="exibir">exibir</button>
+    <button id="ocultar">ocultar</button>
+    
+    
+    <h1 class="exibir">Exibir</h1>
+    <h1 class="ocultar">Ocultar</h1><hr>
+    <h1 class="message">Ola</h1>
+    
+</body>
+</html>

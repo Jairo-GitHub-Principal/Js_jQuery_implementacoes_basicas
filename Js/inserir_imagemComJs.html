@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jQuery/jquery-3.6.4.min.js"></script>
+    <script>
+        
+        function carregarImg(){
+            document.getElementsByTagName("img")[0].src="logo_proway.png"; // carrega a imagem no carregamento da pagina
+        }
+        function inserirIMG(){
+            var imagem = document.getElementsByTagName("img")[0].style="width:400px";// altera o tamanho da imagem quando clicar no botão
+        
+        }
+
+    </script>
+    
+</head>
+<body onload="carregarImg()">
+    <button type="button" onclick="inserirIMG()">inserir imagem</button>
+    <img width="200px"/>
+    
+</body>
+</html>

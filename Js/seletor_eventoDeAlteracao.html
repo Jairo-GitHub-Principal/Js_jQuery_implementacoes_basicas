@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evento de alteração </title>
+
+    <script>
+        function mensagem(){
+            // seleciono o elemento select atraves do id, e atribui o valor do option selecionado 
+            // a variavel testoCapturado
+            
+            testoCapturado = document.getElementById("cursos").value;
+            alert(testoCapturado);
+
+
+        }
+
+        function textoDigitado(){
+            textoQueFoiDigitado = document.getElementById("textoDigitadoNoInput").value;
+            alert(textoQueFoiDigitado);
+        }
+
+    </script>
+</head>
+<body>
+    <select name="" id="cursos" onchange="mensagem()">
+        <option>escolha seu curso</option>
+        <option>Html</option>
+        <option>css</option>
+        <option>js</option>
+    </select>
+<form  method="get">
+    <input type="text" id="textoDigitadoNoInput" >
+    <button onclick="textoDigitado()" >enviar</button>
+
+</form>
+   
+</body>
+</html>

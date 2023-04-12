@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções</title>
+    <script>
+         // contar caractere
+        var texto ="informatica proway";
+        alert(texto.length + " é o numero de caracteres que compõe a frase: " + texto);
+
+        // transformar todo o texto em letras minuscular
+        var letrasMinusculas = "InforMatica ProWay";
+        alert(letrasMinusculas.toLowerCase(letrasMinusculas));
+
+        
+        // transformar todo o texto em letras maiusculas
+        var letrasMaiusculas ="informatica PrOWay";
+        alert(letrasMaiusculas.toUpperCase(letrasMaiusculas));
+
+        
+        // transformar somente a primeira letra de uma palavra em maiuscula
+        var primeiraLetraMaiuscula = "informatica";
+        alert(primeiraLetraMaiuscula[0].toLocaleUpperCase()+primeiraLetraMaiuscula.slice(1));// o slice recebe um valor de posição 
+        // sendo assim no codigo acima,selecionamos a primeira letra da palavra armazenada na variavel 
+        // primeiraLetraMaiuscula, e transformamos ela em uma letra maiuscula, depois usamos o slice para separar a 
+        // primeira letra da palavra informatica, com slice(1), com esse codigo nos conseguimos extrair da palavra todos
+        // os caracteres apartir da posição 1, ai temos a seguinte palavra: nformatica, 
+        //obs.: primeiro separamos a primeira letra da palavra e transformamos a em maiuscula, 
+        // depois selecionamos as letra da palavra informatica apartir da posição 1, ou seja apartir da letra n
+        // e concatenamos primeiraLetraMaiuscula[0].toLocaleUpperCase() com primeiraLetraMaiuscula.slice(1)
+        // ai temos I e nformatica com a concatenação fica Informatica, ou seja: pegamos uma palavra coma 
+        // todas as letras minusculas e transformamos somente  a primeira letra em muiuscula
+       
+        // pegar a primeira letra de uma palavra
+        var pegarPrimeiraLetra = "informatica";
+        alert(pegarPrimeiraLetra.charAt(pegarPrimeiraLetra));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

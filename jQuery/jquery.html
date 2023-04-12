@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.4.js"
+  integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+  crossorigin="anonymous"></script>
+
+  <script>
+    // excrutura do jQuery
+    $(document).ready(function(){ // todo o conteudo jquery de uma pagin, estara dentro do escopo dessa função
+        $(".titulo").hide();
+        $("#ocultar").click(function(){
+            $(".titulo").fadeOut("slow");
+        })
+
+        $("#exibir").click(function(){
+            $(".titulo").fadeIn(3000);
+        })
+
+    });
+
+  </script>
+</head>
+<body>
+    <button id="exibir">exibir</button>
+    <button id="ocultar">ocultar</button>
+
+    <h1 class="titulo">Aprendendo jquery</h1>
+    <h1 class="titulo">texto do h1, posição 1</h1>
+
+    
+</body>
+</html>

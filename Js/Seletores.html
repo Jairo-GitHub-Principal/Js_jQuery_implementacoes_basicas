@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seletores</title>
+    <link rel="stylesheet" type="text/css" href=""/>
+    <style  type="text/css" >
+        p{
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function acao(){
+            for(var i = 0; i < 3;i++){
+                var texto = document.getElementsByTagName("h1")[i];
+            alert(texto.innerHTML);
+            }
+
+
+            
+        }
+       
+        
+        function acao2(){
+            const num  = document.getElementById("numSelectClassTextoH2").value
+            var texto2 = document.getElementsByClassName("textoH2")[num];
+            alert(texto2.innerHTML);
+        }
+
+        function Exibirconteudo(){
+            var campo = document.getElementById("campo")
+            var camp1 = document.getElementsByClassName("campo1")[0]
+            
+            alert(campo.value);
+            alert(camp1.innerHTML);
+
+            // apagar o texto digitado no input
+            campo.value="";
+
+       
+
+        }
+
+        // auterar texto de um elemento atravez de um texto adquirido por uma input
+
+        function mudarTexto(){
+            var campo = document.getElementById("alterarTexto").value
+            var campo1 = document.getElementById("vaiSerAlterado")
+
+            campo1.innerHTML=campo;
+
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Proway</h1>
+    <h1>Seletores Js</h1>
+    <h1>Curso Proway</h1>
+    <button onclick="acao()">selecionar</button>
+
+
+    
+
+    <h2  class="textoH2">0_Html</h2>
+    <h3 class="textoH2">1_css</h3>
+    <p class="textoH2">2_Js</p>
+    <input type="number"  id="numSelectClassTextoH2"/> 
+    <button onclick="acao2()">selecionar</button><br/><br/>
+    
+
+    <h1 class="campo1">testo de teste 1</h1>
+    <input type="text"  id="campo"/>
+    
+    
+    <button onclick="Exibirconteudo()">click aqui</button>
+    <br/>
+    <br/>
+
+    <h1 id="vaiSerAlterado">texto inicial</h1>
+    <input type="text" id="alterarTexto">
+    <button onclick="mudarTexto()"> mudar texto</button>
+    
+    
+</body>
+</html>

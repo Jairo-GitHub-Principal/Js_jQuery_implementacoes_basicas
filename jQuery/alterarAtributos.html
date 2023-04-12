@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>extrutura base jquery</title>
+
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready (function() { /*escopoda function*/ 
+           $("img").attr("width","200");  // attr significa atributo
+            $("img").attr("title","titulo inicial")
+           $("#estilo").click(function(){
+            $("img").attr({"width":"500","title":"titulo alterado"})
+           })
+         });
+    </script>
+</head>
+<body>
+    <button id="estilo">Estilizar o h1</button>
+   
+    <img src="./logo_proway.png"  width="500"/>
+</body>
+</html>

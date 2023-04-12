@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor ou array de objetos</title>
+
+    <script>
+        // abaixo criaremos nosso vetor de objetos, ou seja:
+        // criaremos um objeto usando um vetor ou array
+
+        var cursos =[
+            {nome:"html", cargaHoraria:20,sala:4},// objeto na posição[0]
+            {nome:"css", cargaHoraria:10,sala:5},// objeto na posição [1]
+            {nome:"js", cargaHoraria:20,sala:6} // objeto na pasição [2]
+        ]
+
+        // abaixo fazer aparecer na tela os atributos ou propriedades dos nosso objetos
+        // para isso não é mais possivel faze-lo com o comando  aler(cursos[0])
+        // agora ao indicar a posição do objeto na função alert, temos que passar também as,
+        // propriedades que sera exibida do obijeto da posição informada
+        alert("curso "+cursos[0].nome +"_carga horaria "+cursos[0].cargaHoraria+"_sala "+cursos[0].sala);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

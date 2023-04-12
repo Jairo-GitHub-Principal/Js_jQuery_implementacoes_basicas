@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>extrutura base jquery</title>
+
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script>
+        $(document) .ready (function() { /*escopoda function*/ 
+           
+            $(".texto").css({ "color":"red",}) // inicia o elemento red ja com estilo de cor de texto
+            $("#estilo").click(function(){
+                $(".texto").css( // aplicando estilo  no elemento h1 ao clicar no botão
+                    {   "border":"solid",
+                        "borderColor":"green",
+                        "width":"400px"
+                }); 
+            })          
+         });
+    </script>
+</head>
+    <button id="estilo">Estilizar o h1</button>
+    <h1 class="texto">Utilizando CSS com jquery</h1>      
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>extrutura base jquery</title>
+
+    <script src="./jquery-3.6.4.min.js"></script>
+    <script>
+        $(document) .ready (function() { /*escopoda function*/ 
+            // cada tag selecionada esta sendo armazenada em um var
+            var campo = $("input").val();  // selecionando a tag input diretamente 
+            var titulo =$("#titulo").html();// selecionando a tag h1 atraves de um id
+            var subtitulo =$(".subtitulo").html();// selecionando a tag h2 atravez de um class
+
+            alert(campo);
+            alert(titulo);
+            alert(subtitulo);
+        });
+    </script>
+</head>
+<body>
+    <input type="text" value="Campo nome"/>
+    <h1 id="titulo">Título em h1</h1>
+    <h2 class="subtitulo">Título em h2</h2>
+    
+</body>
+</html>

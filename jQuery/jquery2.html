@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./jquery-3.6.4.min.js"></script>
+
+    <script>
+        $(document).ready(function(){ // esse codigo é um extrutura de escopo onde dentro escopo dessa função, sera implementado o jQuery 
+           
+            //var campo=  $("#testo").val();
+            var campo2= $("#primeirotxt").html();
+           var campo3 = $("#segundotxt").html();
+          
+           alert(campo2);
+           alert(campo3);
+           
+           $("#botao").click( function(){
+              var nome = $("#testo").val();
+
+            $("#primeirotxt").html("primeiro texto selecionado"); // inserindo algun conteudo dentro dos parentes, sera substituido o conteudo atual da tag pelo conteudo pelo conteudo que foi inserido nos parentese
+            $("#primeirotxt").css("color","blue");
+            $("#segundotxt").css("color","red");
+            
+
+            $("#nome").html(" nome: "+nome);
+            $("#nome").css("color","grey")
+
+                
+            });
+           
+            
+        });
+
+    </script>
+</head>
+<body>  
+    <input type="text"  id="testo"/> 
+    <button id="botao">click</button>
+
+    <h1 id="primeirotxt"></h1>
+    <h1 id="segundotxt">segundo texto</h1>
+    <h1 id="nome"></h1>
+
+    
+
+    
+</body>
+</html>
